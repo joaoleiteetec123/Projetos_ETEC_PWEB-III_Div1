@@ -1,5 +1,5 @@
-create database lanchonete2;
-use lanchonete2;
+create database lanchonete;
+use lanchonete;
 create table usuarios
     (
         usuid int primary key auto_increment,
@@ -8,3 +8,8 @@ create table usuarios
         ususenha varchar(100),
         usulogado boolean default 0
     );
+
+insert INTO usuarios
+(usunome,usulogin,ususenha)
+VALUES
+('joao','leite',md5(1234));
